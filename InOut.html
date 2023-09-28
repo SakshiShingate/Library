@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="InOut" style="width: 100%; height: 100%; position: relative; background: white">
+    <div class="InOut" id="inButton" style="width: 100%; height: 100%; position: relative; background: white">
         <div class="InButton" style="width: 316px; padding-left: 109px; padding-right: 109px; padding-top: 44px; padding-bottom: 44px; left: 38px; top: 275px; position: absolute; background: linear-gradient(100deg, #173F5F 6%, rgba(23, 63, 95, 0.58) 100%); border-radius: 68.50px; overflow: hidden; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
             <div class="In" style="color: white; font-size: 40px; font-family: Montserrat; font-weight: 400; word-wrap: break-word">IN</div>
         </div>
@@ -16,5 +16,16 @@
         <img class="Dietlogo1" style="width: 338.72px; height: 56.67px; left: 27px; top: 40px; position: absolute" src="https://via.placeholder.com/339x57" />
         <div class="Line3" style="width: 393px; height: 0px; left: -0px; top: 137px; position: absolute; border: 1px #173F5F solid"></div>
     </div>
+    <script>
+        // Get a reference to the "InButton" element
+        var inButton = document.getElementById("inButton");
+    
+        // Add a click event listener to the button
+        inButton.addEventListener("click", function () {
+            // Disable the button
+            inButton.disabled = true;
+            inButton.style.background = "gray";
+        inButton.style.cursor = "not-allowed";});
+</script>
 </body>
 </html>
